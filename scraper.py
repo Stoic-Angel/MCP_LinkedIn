@@ -6,6 +6,7 @@ from linkedin_scraper import Person, actions
 from mcp.server.fastmcp import FastMCP
 import requests
 
+
 load_dotenv()
 headers = {"x-rapidapi-key": os.getenv('x-rapidapi-key')}
 
@@ -14,22 +15,15 @@ headers = {"x-rapidapi-key": os.getenv('x-rapidapi-key')}
 mcp = FastMCP("scraper")
 
 
-
-from profile_urls import profiles_urls
-
-
-
 url = "https://fresh-linkedin-profile-data.p.rapidapi.com/get-linkedin-profile"
 
-                                      
+from profile_urls import profiles_urls                          
 @mcp.tool()
 def scrape(name:str): 
     '''
     Scrapes user data from LinkedIn based on the name. GDG only.
     '''
 
-    # print(f"Starting scraping for {len(profiles_urls)} profiles...")
-    # for name, url in profiles_urls.items():
     print(f"Scraping profile for: {name}")
     linkurl = profiles_urls[name]
     querystring = {
