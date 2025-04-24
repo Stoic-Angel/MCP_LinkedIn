@@ -13,27 +13,11 @@
 
 ---
 
-## 🗂️ Project Structure
-
-```
-MCP LinkedIn Scraper/
-├── .env                # Environment variables (API keys, secrets)
-├── .gitignore          # Git ignore rules
-├── .python-version     # Python version (3.12)
-├── profile_urls.py     # Dictionary of names to LinkedIn profile URLs
-├── pyproject.toml      # Project metadata and dependencies
-├── scraper.py          # Main scraping logic and MCP tool definition
-├── uv.lock             # Dependency lock file
-└── README.md           # This documentation
-```
-
----
-
 ## 🚀 Getting Started
 
 ### 1. **Clone the Repository**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Stoic-Angel/MCP_LinkedIn
 cd MCP\ LinkedIn\ Scraper
 ```
 
@@ -43,7 +27,7 @@ This project requires **Python 3.12**.
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate
-uv pip3 install -r requirements.txt  # Or use `uv`/`pip` as per your setup
+uv pip3 install -r requirements.txt
 ```
 
 Alternatively, use the dependencies listed in `pyproject.toml`.
