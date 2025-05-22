@@ -64,8 +64,4 @@ The scraper is exposed as an MCP tool. You can run it via MCP CLI or through Cla
 - `mcp[cli]`
 - `httpx`
 
-All dependencies are managed via `pyproject.toml` and locked in `uv.lock`.
-
-
-
-> For questions, suggestions, or contributions, please open an issue or pull request!
+All dependencies are managed via `pyproject.toml` and locked in `uv.lock`
