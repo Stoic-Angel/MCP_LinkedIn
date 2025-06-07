@@ -13,6 +13,20 @@
 
 ---
 
+## 🗂️ Project Structure
+
+```
+MCP LinkedIn Scraper/
+├── .env                # Environment variables (API keys, secrets)
+├── .gitignore          # Git ignore rules
+├── profile_urls.py     # Dictionary of names to LinkedIn profile URLs
+├── pyproject.toml      # Project metadata and dependencies
+├── scraper.py          # Main scraping logic and MCP tool definition
+├── uv.lock             # Dependency lock file
+└── README.md           # This documentation
+```
+
+---
 ## 🚀 Getting Started
 
 ### 1. **Clone the Repository**
